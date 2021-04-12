@@ -5,5 +5,6 @@
     <string name="button_first_red">Red Fragment</string>
     <string name="button_first_green">Green Fragment</string>
     <string name="button_first_blue">Blue Fragment</string>
+    <string name="button_first_yellow">Yellow Fragment</string>
     <string name="text_color">Color</string>
 </resources>
