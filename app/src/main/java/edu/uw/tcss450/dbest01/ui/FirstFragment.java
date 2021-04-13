@@ -39,6 +39,8 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
         binding.buttonGreen.setOnClickListener(button ->
                 processColor(Color.GREEN));
         binding.buttonBlue.setOnClickListener(this::handleBlue);
+        binding.buttonPurple.setOnClickListener(button ->
+                processColor(Color.MAGENTA));
     }
 
     @Override
