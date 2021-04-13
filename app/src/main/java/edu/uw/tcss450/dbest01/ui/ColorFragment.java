@@ -24,19 +24,20 @@ public class ColorFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentColorBinding.inflate(inflater,container,false);
+        binding = FragmentColorBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         ColorFragmentArgs args = ColorFragmentArgs.fromBundle((getArguments()));
 
         binding.textLabel.setTextColor(args.getColor());
     }
-    private void updateContent(int color){
+
+    private void updateContent(int color) {
         binding.textLabel.setTextColor(color);
     }
 }
