@@ -39,6 +39,8 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
         binding.buttonGreen.setOnClickListener(button ->
                 processColor(Color.GREEN));
         binding.buttonBlue.setOnClickListener(this::handleBlue);
+        binding.buttonColor.setOnClickListener(button ->
+                handleHexadecimalValue());
     }
 
     @Override
@@ -66,6 +68,16 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
     private void handleBlue(View v) {
         if (v == binding.buttonBlue) {
             processColor(Color.BLUE);
+        }
+    }
+
+    private void handleHexadecimalValue(){
+        String txtContents = binding.textColor.getText().toString();
+        if(txtContents.isEmpty() || txtContents.charAt(0) != '#' || txtContents.length() != 7 ){
+            binding.textColor.setError("Please enter some sort of valid hexadecimal value.");
+        }
+        else{
+            processColor(Color.parseColor(txtContents));
         }
     }
 }
