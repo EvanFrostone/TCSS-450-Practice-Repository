@@ -23,36 +23,41 @@
     <Button
         android:id="@+id/buttonRed"
         style="@android:style/Widget.Material.Button.Toggle"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="275dp"
         android:text="@string/button_first_red"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGreen"
         app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp"
         tools:text="@string/button_first_red" />
 
     <Button
         android:id="@+id/buttonGreen"
         style="@android:style/Widget.Holo.Button"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
         android:text="@string/button_first_green"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBlue"
         app:layout_constraintTop_toBottomOf="@+id/buttonRed"
         tools:text="@string/button_first_green" />
 
     <Button
         android:id="@+id/buttonBlue"
         style="@android:style/Widget.Holo.Button.Inset"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
         android:text="@string/button_first_blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOrange"
         app:layout_constraintTop_toBottomOf="@+id/buttonGreen" />
+
+    <Button
+        android:id="@+id/buttonOrange"
+        android:layout_width="406dp"
+        android:layout_height="47dp"
+        android:text="@string/button_first_orange"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBlue"
+        tools:layout_editor_absoluteX="4dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

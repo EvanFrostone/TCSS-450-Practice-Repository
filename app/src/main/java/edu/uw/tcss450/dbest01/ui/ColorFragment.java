@@ -33,7 +33,7 @@ public class ColorFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ColorFragmentArgs args = ColorFragmentArgs.fromBundle((getArguments()));
-
+        
         binding.textLabel.setTextColor(args.getColor());
     }
     private void updateContent(int color){
